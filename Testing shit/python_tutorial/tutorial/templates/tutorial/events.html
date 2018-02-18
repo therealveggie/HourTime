@@ -1,0 +1,19 @@
+{% extends "tutorial/layout.html" %}
+{% block content %}
+<h1>Available Time</h1>
+<table class="table">
+  <tr>
+    <th>Date</th>
+    <th>Start Time</th>
+    <th>End Time</th>
+  </tr>
+
+  {% for event in events %}
+    <tr>
+      <td>{{ event.date }}</td>
+      <td>{{ event.start }} </td>
+      <td>{{ event.end }} </td>
+    </tr>
+  {% endfor %}
+</table>
+{% endblock %}

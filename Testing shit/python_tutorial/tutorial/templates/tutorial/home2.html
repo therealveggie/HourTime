@@ -1,0 +1,13 @@
+{% extends "tutorial/layout.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h1>Add the Second Person's Calendar</h1>
+  <p>
+  	In order to merge the calendars, we need to access a different stored in either Outlook or Google Calendar
+  </p>
+  <p>
+    <a class="btn btn-lg btn-primary" href="{{sign_in_url}}" role="button" id="connect-button">Connect to Outlook</a>
+    <a class="btn btn-lg btn-primary" href="{{sign_in_url}}" role="button" id="connect-button">Connect to Google</a>
+  </p>
+</div>
+{% endblock %}

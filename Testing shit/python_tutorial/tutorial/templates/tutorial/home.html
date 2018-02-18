@@ -1,0 +1,15 @@
+{% extends "tutorial/layout.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h1>Get Started</h1>
+  <p>
+  	In order to get started, we need to access {{ person }} calendars stored in either Outlook or Google Calendar
+  </p>
+  <p>
+    <a class="btn btn-lg btn-primary" href="{{sign_in_url}}" role="button" id="connect-button">Connect to Outlook</a>
+    <form action = '#' method = "get">
+    	<input type="submit" class = "btn btn-lg btn-primary" value="Connect to Google" name='ggbtn'>
+    </form>
+  </p>
+</div>
+{% endblock %}
